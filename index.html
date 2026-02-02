@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AA Works</title>
+
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:'Montserrat', sans-serif;
+    background: linear-gradient(45deg, #091e27, #48f0e7);
+    color:#ffffff;
+    min-height:100vh;
+}
+
+/* NAVBAR */
+nav{
+    display:flex;
+    justify-content:flex-end;
+    padding:20px 40px;
+}
+nav a{
+    margin-left:20px;
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+}
+
+/* CONTAINER */
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:40px;
+    text-align:center;
+}
+
+/* LOGO */
+.logo{
+    font-family:'League Spartan', sans-serif;
+    font-size:120px;
+    letter-spacing:18px;
+}
+.subtitle{
+    font-size:22px;
+    margin-top:10px;
+    letter-spacing:2px;
+}
+
+/* SERVICES */
+.services{
+    margin-top:60px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap:30px;
+}
+.card{
+    background:rgba(255,255,255,0.12);
+    padding:25px;
+    border-radius:15px;
+}
+.card h3{
+    margin-bottom:10px;
+    font-size:22px;
+}
+.card p{
+    font-size:16px;
+    line-height:1.6;
+}
+
+/* BUTTON */
+.button{
+    display:inline-block;
+    margin-top:60px;
+    padding:15px 35px;
+    background:#48f0e7;
+    color:#091e27;
+    font-weight:bold;
+    border-radius:12px;
+    text-decoration:none;
+}
+
+/* FOOTER */
+footer{
+    margin-top:60px;
+    font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="order.html">Order Now</a>
+</nav>
+
+<div class="container">
+
+    <div class="logo">AA</div>
+    <div class="subtitle">AA Works – Digital Services</div>
+
+    <div class="services">
+        <div class="card">
+            <h3>Typing / Word</h3>
+            <p>Accurate typing, assignments, documents, and reports.</p>
+        </div>
+
+        <div class="card">
+            <h3>Excel / Data Entry</h3>
+            <p>Data entry, Excel sheets, formulas, and tables.</p>
+        </div>
+
+        <div class="card">
+            <h3>PowerPoint</h3>
+            <p>Professional presentations for school and business.</p>
+        </div>
+
+        <div class="card">
+            <h3>Graphic Design</h3>
+            <p>Logos, Instagram posts, banners using Canva.</p>
+        </div>
+    </div>
+
+    <!-- BUTTON DOWN -->
+    <a href="order.html" class="button">Go to Order Page →</a>
+
+    <footer>
+        WhatsApp: 03182737612 <br>
+        © 2026 AA Works
+    </footer>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order – AA Works</title>
+
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+
+<style>
+body{
+    font-family:'Montserrat', sans-serif;
+    background: linear-gradient(45deg, #091e27, #48f0e7);
+    color:#fff;
+    margin:0;
+}
+
+/* NAV */
+nav{
+    display:flex;
+    justify-content:flex-end;
+    padding:20px 40px;
+}
+nav a{
+    margin-left:20px;
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+}
+
+/* CONTAINER */
+.container{
+    max-width:800px;
+    margin:auto;
+    padding:40px;
+}
+
+/* LOGO */
+.logo{
+    text-align:center;
+    font-family:'League Spartan', sans-serif;
+    font-size:80px;
+    letter-spacing:15px;
+    margin-bottom:10px;
+}
+
+/* FORM */
+form{
+    background:rgba(255,255,255,0.12);
+    padding:30px;
+    border-radius:15px;
+}
+
+label{
+    display:block;
+    margin-top:20px;
+    font-weight:bold;
+}
+
+input, select, textarea{
+    width:100%;
+    padding:12px;
+    margin-top:8px;
+    border-radius:10px;
+    border:none;
+    font-size:16px;
+}
+
+textarea{
+    height:140px;
+    resize:none;
+}
+
+button{
+    margin-top:25px;
+    padding:15px;
+    width:100%;
+    background:#48f0e7;
+    color:#091e27;
+    font-weight:bold;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+}
+
+/* NOTE */
+.note{
+    text-align:center;
+    margin-top:20px;
+    font-size:15px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+</nav>
+
+<div class="container">
+
+    <div class="logo">AA</div>
+    <p style="text-align:center;">Confirm price on WhatsApp: <b>03182737612</b></p>
+
+    <form action="https://formspree.io/f/meezlylb" method="POST" enctype="text/plain">
+
+        <label>Your Name</label>
+        <input type="text" name="Name" required>
+
+        <label>Contact Number</label>
+        <input type="tel" name="Phone" required>
+
+        <label>Select Service</label>
+        <select name="Service" required>
+            <option value="">-- Select --</option>
+            <option>Typing / Word</option>
+            <option>Excel / Data Entry</option>
+            <option>PowerPoint</option>
+            <option>Graphic Design</option>
+            <option>Other</option>
+        </select>
+
+        <label>Work Details</label>
+        <textarea name="Details" placeholder="Explain your work in detail. What you want ..." required></textarea>
+
+        <button type="submit">Place Order</button>
+    </form>
+
+    <div class="note">
+        <a href="index.html" style="color:#fff;">← Back to Home</a>
+    </div>
+
+</div>
+
+</body>
+</html>
